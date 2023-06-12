@@ -1,11 +1,61 @@
 import React from "react";
 import "./style.scss";
 
+import ServicesCard from "../utils/services/serviceCards";
+import WorkFlow from "../utils/workFlow/workFlow";
+
 import Hero from "../assets/images/heroImg.png";
 import AboutImg from "../assets/images/about.svg";
 import Circle from "../assets/images/circle.svg";
+import YellowBackground from "../assets/images/yellowBackground.png";
+import WorkFlowImg from "../assets/images/settings.svg";
 
 const About = () => {
+  const servicesData = [
+    {
+      title: "Lorem Ipsum",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      button: "Learn more",
+      servicesLink: "",
+    },
+    {
+      title: "Lorem Ipsum",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      button: "Learn more",
+      servicesLink: "",
+    },
+    {
+      title: "Lorem Ipsum",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      button: "Learn more",
+      servicesLink: "",
+    },
+    {
+      title: "Lorem Ipsum",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      button: "Learn more",
+      servicesLink: "",
+    },
+  ];
+
+  const workFlowData = [
+    {
+      title: "Flexiable Pricing Plan To Start",
+      Image: WorkFlowImg,
+    },
+    {
+      title: "Flexiable Pricing Plan To Start",
+      Image: WorkFlowImg,
+    },
+    {
+      title: "Flexiable Pricing Plan To Start",
+      Image: WorkFlowImg,
+    },
+    {
+      title: "Flexiable Pricing Plan To Start",
+      Image: WorkFlowImg,
+    },
+  ];
   return (
     <>
       <div className="home">
@@ -70,6 +120,33 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="services">
+        <h2 className="title">Services</h2>
+        <h2 className="description">Services You might like</h2>
+        <div className="ServicesCard">
+          {servicesData.map((service, index) => (
+            <ServicesCard
+              key={index}
+              servicesTitle={service.title}
+              servicesText={service.text}
+              servicesButton={service.button}
+              servicesLink={service.link}
+            />
+          ))}
+        </div>
+        <div className="background-img">
+          <img src={YellowBackground} alt="yellow-backgrouns" />
+        </div>
+      </div>
+      <div className="workflow">
+        {workFlowData.map((workFlow, index) => (
+          <WorkFlow
+            key={index}
+            workflowSettingTitle={workFlow.title}
+            workflowSettingImg={workFlow.Image}
+          />
+        ))}
       </div>
     </>
   );

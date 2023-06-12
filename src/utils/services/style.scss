@@ -2,8 +2,9 @@
 
 .tabletImage {
     width: 310px;
-    box-shadow: 3px 7px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 7px 15px #00000080;
     border-radius: 10px;
+    background-color: $white;
     .tablet-datil {
         padding: 16px 29px ;
         .tablet-datil-title {

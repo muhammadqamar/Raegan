@@ -125,3 +125,50 @@
         }
     }
 }
+.services {
+    padding: 0 70px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .title { 
+        margin-top: 0;
+        margin-bottom: 16px;
+        padding: 8px 16px;
+        background-color: $primaryYellow2;
+        border-radius: 10px; 
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $primaryBrown;
+        width:106px;
+    }
+    .description {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 100%;
+        color: $black;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .ServicesCard {
+        display: flex;
+        gap: 20px;
+    }
+    .background-img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        height: 305px;
+    }
+}
+.workflow {
+    display: flex;
+    gap: 20px;
+    padding: 72px 50.5px 70px;
+}
