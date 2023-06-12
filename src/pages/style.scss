@@ -1,0 +1,127 @@
+@import "../assets/styles/global.scss";
+.home {
+    .hero {
+        display: flex;
+        background-color: $primaryBrown;
+        .hero-sec1 {
+            padding: 72px 0 16px 70px;
+            .title { 
+                font-style: normal;
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 100%;
+                color: #FFFFFF;
+                margin-top: 0;
+                margin-bottom: 16px;
+            }
+            .business {
+                color:$primaryYellow1;
+            }
+            .text {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                width: 518px;
+                color: $white;
+                margin-bottom: 72px;
+            }
+            .buttton {
+                border: none;
+                padding: 8px 16px;
+                border-radius: 20px;
+                background-color: $primaryYellow1; 
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                color: $white;
+            }
+        }
+        .hero-sec2 {
+            margin-top: 32px;
+            img {
+                width: 755px;
+                margin-bottom: -6px;
+            }
+        }
+    }
+}
+.about {
+    padding: 72px 70px 152px;
+    .about-us{
+        display: flex;
+        gap: 20px;
+        .about-us-dtail {
+            .main-title{
+                width: 133px;
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 16px;
+                padding: 8px 16px;
+                background-color: $primaryYellow2;
+                border-radius: 10px; 
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: $primaryBrown;
+            }
+            .sub-title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 100%;
+                color: $primaryBrown;
+                margin-top: 0;
+                margin-bottom: 16px;
+            }
+            .description {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: $primaryBrown;
+            }
+            .list {
+                margin-top: 24px;
+                margin-bottom: 81px;
+                .list-dtail{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-bottom: 18px;
+                    p {
+                        font-family: 'Comfortaa';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 18px;
+                        color: $primaryBrown;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .button {
+                padding: 8px 16px;
+                border: none;
+                border-radius: 20px;
+                background-color: $primaryYellow1;
+                width: 159px;
+                text-align: center;
+                a {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

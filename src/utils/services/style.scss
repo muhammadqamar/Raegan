@@ -1,0 +1,35 @@
+@import "../../assets/styles/global.scss";
+
+.tabletImage {
+    width: 310px;
+    box-shadow: 3px 7px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    .tablet-datil {
+        padding: 16px 29px ;
+        .tablet-datil-title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 8px;
+            // font-family: $roboto-font;
+        }
+        .tablet-datil-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 24px;
+            // align-self: stretch;
+        }
+        .tablet-datil-button {
+            border: none;
+            padding:  16px;
+            color: $white;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            background: #F9D342;
+            border-radius: 20px;}
+    }
+}

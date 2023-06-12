@@ -1,0 +1,68 @@
+@import "../../assets//styles/global.scss"; 
+.footer {
+    padding: 59px 111px 106px 101px;
+    background-color: $primaryBrown;
+    color: $primaryYellow1;
+    .sub-footer {
+        display: flex;
+        justify-content: space-between;
+        .sub-footer-dtail-1 {
+            .Raegen {
+            margin-bottom: 24px;
+            }
+            .footer-sec1 {
+                display: flex;
+                gap: 16px;
+                align-items: center; 
+                font-family: 'Lato';
+                font-style: normal;
+                line-height: 19px;
+                margin-bottom: 16px;
+                .text { 
+                    width: 219px;
+                    .text-title {
+                        margin-top: 0;
+                        margin-bottom: 8px;   
+                        font-weight: 400;
+                        font-size: 16px; 
+                    }
+                    .text-description { 
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .sub-footer-dtail-2, .sub-footer-dtail-3 , .sub-footer-dtail-4 {
+            .title { 
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 100%;
+                margin-top: 0;
+                margin-bottom: 24px;
+            }
+            .title-dtail {
+                .text {
+                    display: flex;
+                    margin-bottom: 16px;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+            .title-dtail-1 {
+                width: 219px;
+                .text {
+                    display: flex;
+                    margin-bottom: 16px;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

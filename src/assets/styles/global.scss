@@ -1,0 +1,9 @@
+@import'./color.scss';
+@import '../fonts/stylesheet.scss';
+
+body {
+    background-color: $primaryYellow;
+    font-family: 'Kanit';
+    width: 1440px;
+    margin: auto;
+}

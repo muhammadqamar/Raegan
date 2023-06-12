@@ -1,0 +1,16 @@
+.work-flow {
+    width: 314.75px; 
+    box-shadow: inset -5px 5px 22px rgba(235, 181, 49, 0.3), inset 16px -16px 40px rgba(235, 181, 49, 0.3), inset -5px 5px 22px rgba(235, 181, 49, 0.3), inset -16px 16px 40px rgba(235, 181, 49, 0.3);
+    border-radius: 30px;
+    padding: 56.5px 48.88px 56.5px;
+    .work-flow-dtail {
+        display: flex;
+        gap: 16px;
+        .work-flow-dtail-title { 
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            color: #F9D342;
+        }
+    }
+}
