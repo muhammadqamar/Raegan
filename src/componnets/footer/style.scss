@@ -48,18 +48,57 @@
                 .text {
                     display: flex;
                     margin-bottom: 16px;
-                    p {
+                    span {
                         margin: 0;
+                        a{
+                            text-decoration: none;
+                            color: $primaryYellow1;
+                        }
                     }
                 }
             }
             .title-dtail-1 {
-                width: 219px;
+                width: 219px; 
                 .text {
                     display: flex;
                     margin-bottom: 16px;
                     p {
                         margin: 0;
+                    }
+                    img {
+                        margin-left: 6px;
+                        margin-bottom: 5px;
+                    }
+                }
+                .email {
+                    max-width: 295px;
+                    background-color: $primaryBrown3 !important;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 8px 16px !important;
+                    color: $primaryYellow1 !important; 
+                    font-family: 'Lato'; 
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                .btn {
+                    background-color: $primaryYellow1;
+                    padding: 6px 12px;
+                    border: none;
+                    border-radius: 20px;
+                    color: $primaryBrown;
+                    margin-top: 24px;
+                    margin-left: 54px; 
+                    font-family: "Kanit"; 
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    &:hover {
+                        background-color: $primaryYellow5;
+                        color: $primaryYellow6;
                     }
                 }
             }

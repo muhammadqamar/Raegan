@@ -14,7 +14,11 @@
     .nav-items {
         display: flex;
         align-items: center;
-        gap: 32px;
+        gap: 32px; 
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
         .nav-list {
             display: flex;
             gap: 40px;
@@ -22,10 +26,6 @@
                 list-style-type: none;
                 a {
                     text-decoration: none; 
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 36px;
                     color: $white;
                 }
             }
@@ -35,11 +35,13 @@
             background-color: $primaryYellow1;
             border-radius: 20px;
             border: none; 
+            color: $white; 
             font-style: normal;
             font-weight: 700;
             font-size: 24px;
             line-height: 36px;
-            color: $white;
+            font-family: "Kanit";
+            cursor: pointer;
             &:hover {
                 background-color: $primaryYellow5;
                 color: $primaryYellow6;

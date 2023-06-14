@@ -6,7 +6,14 @@ import Call from "../../assets/images/call.svg";
 import Inbox from "../../assets/images/inbox.svg";
 import Address from "../../assets/images/address.svg";
 import Arrow from "../../assets/images/rightArrow.svg";
+import Required from "../../assets/images/required.svg";
+
 const Footer = () => {
+  const handleChange = (event) => {
+    event.preventDefault();
+    const value = event.target.elements.email.value;
+    alert(value);
+  };
   return (
     <div className="footer">
       <div className="sub-footer">
@@ -41,23 +48,33 @@ const Footer = () => {
           <div className="title-dtail">
             <span className="text">
               <img src={Arrow} alt="arrow" />
-              <p>Home</p>
+              <span>
+                <a href="">Home</a>
+              </span>
             </span>
             <span className="text">
               <img src={Arrow} alt="arrow" />
-              <p>About Us</p>
+              <span>
+                <a href="">About Us</a>
+              </span>
             </span>
             <span className="text">
               <img src={Arrow} alt="arrow" />
-              <p>Services</p>
+              <span>
+                <a href="">Services</a>
+              </span>
             </span>
             <span className="text">
               <img src={Arrow} alt="arrow" />
-              <p>Portfolio</p>
+              <span>
+                <a href="">Portfolio</a>
+              </span>
             </span>
             <span className="text">
               <img src={Arrow} alt="arrow" />
-              <p>Team</p>
+              <span>
+                <a href="">Team</a>
+              </span>
             </span>
           </div>
         </div>
@@ -67,11 +84,15 @@ const Footer = () => {
           <div className="title-dtail">
             <span className="text">
               <img src={Arrow} alt="arrow" />
-              <p>Terms of Services</p>
+              <span>
+                <a href="">Terms of Services</a>
+              </span>
             </span>
             <span className="text">
               <img src={Arrow} alt="arrow" />
-              <p>Privacy Policy</p>
+              <span>
+                <a href="">Privacy Policy</a>
+              </span>
             </span>
           </div>
         </div>
@@ -84,7 +105,19 @@ const Footer = () => {
             </span>
             <span className="text">
               <p>Write your Email :</p>
+              <img src={Required} alt="Required's img!" />
             </span>
+            <form onSubmit={handleChange}>
+              <input
+                type="text"
+                placeholder="Email"
+                className="email"
+                name="email"
+              />
+              <button type="submit" className="btn">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
       </div>
