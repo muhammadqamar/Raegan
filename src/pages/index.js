@@ -161,9 +161,9 @@ const About = () => {
               industry. Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
             </p>
-            <button className="buttton">
-              <a href="">Learn more</a>
-            </button>
+            <a href="" className="buttton">
+              Learn more
+            </a>
           </div>
           <div className="hero-sec2">
             <img src={Hero} alt="Hero image" />
@@ -172,7 +172,9 @@ const About = () => {
       </div>
       <div className="about">
         <div className="about-us">
-          <img src={AboutImg} />
+          <div className="abtImg">
+            <img src={AboutImg} />
+          </div>
           <div className="about-us-dtail">
             <h2 className="main-title">ABOUT US</h2>
             <h2 className="sub-title">
@@ -209,9 +211,9 @@ const About = () => {
                 <p>modifications after project completion.</p>
               </span>
             </div>
-            <div className="button">
-              <a href="#">Learn More</a>
-            </div>
+            <a href="#" className="button">
+              Learn More
+            </a>
           </div>
         </div>
       </div>

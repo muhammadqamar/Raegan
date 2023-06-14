@@ -1,9 +1,10 @@
 @import'./color.scss';
-@import '../fonts/stylesheet.scss';
+@import './fonts.scss';
+@import './responsive.scss';
 
 body {
     background-color: $primaryYellow;
-    font-family: 'Kanit' ;
+    font-family: $Kanit;
     max-width: 1440px;
     margin: auto;
 }

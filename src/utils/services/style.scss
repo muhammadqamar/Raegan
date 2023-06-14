@@ -2,7 +2,7 @@
 
 .tabletImage {
     width: 310px;
-    box-shadow: 3px 7px 15px #00000080;
+    box-shadow: 2px 5px 10px #00000080;
     border-radius: 10px;
     background-color: $white;
     &:hover {
@@ -29,8 +29,9 @@
         }
         .tablet-datil-button {
             border: none;
-            padding:  16px;
+            padding: 8px 16px;
             color: $white;
+            font-family: "Kanit";
             font-style: normal;
             font-weight: 700;
             font-size: 24px;
@@ -42,5 +43,8 @@
                 color: $primaryYellow6;
             }
         }
+    }
+    &:hover {
+        box-shadow: 3px 7px 15px #00000080;
     }
 }

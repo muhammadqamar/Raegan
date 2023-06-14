@@ -6,9 +6,9 @@ import Raegan from "../../assets/images/Raegan.svg";
 const Header = () => {
   return (
     <nav className="nav">
-      <div className="nav-logo">
+      <a href="" className="nav-logo">
         <img src={Raegan} alt="Raegan's Logo" />
-      </div>
+      </a>
       <div className="nav-items">
         <ul className="nav-list">
           <li className="nav-list-item">

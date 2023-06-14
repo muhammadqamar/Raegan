@@ -8,8 +8,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: $primaryBrown;
+    @media #{$screen-xl} {
+        padding: 16px 50px;
+    }
     .nav-logo {
-        // padding-right: 479px;
     }
     .nav-items {
         display: flex;
@@ -19,14 +21,24 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 36px;
+        @media #{$screen-xl} {
+            gap: 25px;
+            font-size: 22px;
+        }
         .nav-list {
             display: flex;
             gap: 40px;
+            @media #{$screen-xl} {
+                gap: 25px;
+            }
             .nav-list-item {
                 list-style-type: none;
                 a {
                     text-decoration: none; 
                     color: $white;
+                    &:hover {
+                        color: $primaryYellow1;
+                    }
                 }
             }
         }

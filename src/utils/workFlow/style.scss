@@ -5,6 +5,9 @@
     border-radius: 30px;
     padding: 56.5px 48.8px;
     background-color: $white;
+    @media #{$screen-xl} {
+        padding: 40px 35px;
+    }
     .work-flow-dtail {
         display: flex;
         gap: 16px;

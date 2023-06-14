@@ -3,8 +3,13 @@
     .hero {
         display: flex;
         background-color: $primaryBrown;
+       
         .hero-sec1 {
             padding: 72px 0 16px 70px;
+            width: 50%;
+            @media #{$screen-xl} {
+                padding: 60px 0 34px 50px;
+            }
             .title { 
                 font-style: normal;
                 font-weight: 700;
@@ -13,6 +18,9 @@
                 color: #FFFFFF;
                 margin-top: 0;
                 margin-bottom: 16px;
+                @media #{$screen-xl} {
+                    font-size: 40px;
+                }
             }
             .business {
                 color:$primaryYellow1;
@@ -26,43 +34,70 @@
                 width: 518px;
                 color: $white;
                 margin-bottom: 72px;
+                @media #{$screen-xl} {
+                    width: auto;
+                    margin-bottom: 75px;
+                    font-size: 18px;
+                }
             }
             .buttton {
                 border: none;
                 padding: 8px 16px;
                 border-radius: 20px;
                 background-color: $primaryYellow1; 
+                font-family: "Kanit";
                 font-style: normal;
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 36px;
+                color: $white;
+                text-decoration: none;
+                color: $white;
                 &:hover {
                     background-color: $primaryYellow5;
+                    color: $primaryYellow6;
                 }
-                a {
-                    text-decoration: none;
-                    color: $white;
-                    &:hover {
-                        color: $primaryYellow6;
-                    }
-                }
+                
             }
         }
         .hero-sec2 {
-            margin-top: 32px;
+            margin-top: 29px;
+            width: 50%;
+            @media #{$screen-xl} {
+                margin-top: 127px;
+            }
             img {
-                width: 755px;
-                margin-bottom: -6px;
+                width: 100%;
+                margin-bottom: -7px;    
+                @media #{$screen-xl} {
+                    margin-bottom: -6px;    
+                }
             }
         }
     }
 }
 .about {
     padding: 72px 70px 152px;
+    @media #{$screen-xl} {
+        padding: 60px 50px;
+    }
     .about-us{
         display: flex;
+        align-items: center;
         gap: 20px;
+        @media #{$screen-xl} {
+            gap: 30px;
+        }
+        .abtImg {
+            width: 50%;
+            img {
+                @media #{$screen-xl} {
+                    width: 100%;
+                }
+            }
+        }
         .about-us-dtail {
+            width: 50%;
             .main-title{
                 width: 133px;
                 text-align: center;
@@ -98,9 +133,12 @@
             .list {
                 margin-top: 24px;
                 margin-bottom: 81px;
+                @media #{$screen-xl} {
+                    margin-bottom: 60px;
+                }
                 .list-dtail{
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     gap: 8px;
                     margin-bottom: 18px;
                     p {
@@ -121,20 +159,16 @@
                 border-radius: 20px;
                 background-color: $primaryYellow1;
                 width: 159px;
-                text-align: center;
-                a {
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 36px;
-                    color: $white;
-                    text-decoration: none;
-                    &:hover {
-                        color: $primaryYellow6 !important;
-                    }
-                }
+                text-align: center; 
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                color: $white;
+                text-decoration: none;  
                 &:hover {
                     background-color: $primaryYellow7;
+                    color: $primaryYellow6 !important;
                 }
             }
         }
@@ -146,6 +180,9 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    @media #{$screen-xl} {
+        padding: 60px 50px;
+    }
     .title { 
         margin-top: 0;
         margin-bottom: 16px;
@@ -172,14 +209,24 @@
     }
     .ServicesCard {
         display: flex;
+        flex-wrap: nowrap;
         gap: 20px;
+        @media #{$screen-xl} {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     .background-img {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        height: 305px;
+        img { 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            height: 305px;
+            @media #{$screen-xl} {
+                width: 100%;
+            } 
+        }
     }
 }
 .workflow {
@@ -187,10 +234,15 @@
     gap: 20px;
     padding: 72px 51px 70px;
     position: relative;
+    justify-content: center;
+    @media #{$screen-xl} {
+        padding: 60px 50px;
+    }
     .waveImg {
         position: absolute;
         z-index: -1;
         top: 121.75px;
+        width: 90%;
     }
 }
 .portfolio {
@@ -205,6 +257,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media #{$screen-xl} {
+        padding: 130px 50px;
+    }
     .title { 
         margin-top: 0;
         margin-bottom: 16px;
@@ -229,6 +284,12 @@
     .portfolioImg {
         display: flex;
         gap: 20px;
+        img {
+            @media #{$screen-xl} {
+                width: 300px;
+                gap: 25px;
+            }
+        }
     }
 }
 .testimonials {
@@ -240,6 +301,10 @@
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
+    @media #{$screen-xl} {
+        padding: 90px 50px;
+        background-position: center;
+    }
     .title { 
         margin-top: 0;
         margin-bottom: 16px;
@@ -309,6 +374,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;  
+        @media #{$screen-xl} {
+            padding: 60px 50px;
+        }
         .title { 
             margin-top: 0;
             margin-bottom: 20px;
@@ -334,6 +402,11 @@
         .teamCards {
             display: flex;
             gap: 20px;
+            flex-wrap: nowrap;
+            justify-content: center;
+            @media #{$screen-xl} {
+               flex-wrap: wrap;
+            }
         }
     }
 }
@@ -348,6 +421,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;  
+        @media #{$screen-xl} {
+            padding: 60px 50px;
+        }
         .title { 
             margin-top: 0;
             margin-bottom: 16px;
@@ -373,9 +449,16 @@
         .form_address {
             display: flex;
             gap: 20px;
+            width: 100%;
+            @media #{$screen-xl} {
+                gap: 10px;
+            }
             .form {
                 width: 860px;
                 color: $primaryYellow1;
+                @media #{$screen-xl} {
+                    width: 70%;
+                }
             }
             .inputs {
                 display: flex;
@@ -392,10 +475,16 @@
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 24px;    
+                    @media #{$screen-xl} {
+                        width: auto;
+                    }
                 }
                 .field1 {
-                    width: 831px !important;
+                    width: 831px;
                     height: 259px;
+                    @media #{$screen-xl} {
+                        width: 200%;
+                    }
                 }
             }
             .btn {
@@ -404,12 +493,16 @@
                 border-radius: 20px;
                 text-align: center;
                 padding: 21px 109px; 
+                font-family: "Kanit";
                 font-style: normal;
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 36px;
                 color: $primaryBrown;
                 cursor: pointer;
+                @media #{$screen-xl} {
+                    padding: 16px 40px
+                }
                 &:hover {
                     background-color: $primaryYellow5;
                     color: $primaryYellow6;
@@ -419,6 +512,9 @@
                 padding: 24px 31px 38px 16px;
                 height: 438px;
                 background-color: $primaryYellow1;
+                @media #{$screen-xl} {
+                    width: 30%;
+                }
                 .address-sec-sub {
                     border-bottom: 2px solid $white;
                     .address-sec {

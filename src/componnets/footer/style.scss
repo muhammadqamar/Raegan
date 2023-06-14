@@ -3,6 +3,9 @@
     padding: 59px 111px 106px 101px;
     background-color: $primaryBrown;
     color: $primaryYellow1;
+    @media #{$screen-xl} {
+        padding: 60px 50px;
+    }
     .sub-footer {
         display: flex;
         justify-content: space-between;
@@ -43,6 +46,9 @@
                 line-height: 100%;
                 margin-top: 0;
                 margin-bottom: 24px;
+                @media #{$screen-xl} {
+                    font-size: 25px;
+                }
             }
             .title-dtail {
                 .text {
@@ -82,6 +88,9 @@
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 24px;
+                    @media #{$screen-xl} {
+                        max-width: 185px;
+                    }
                 }
                 .btn {
                     background-color: $primaryYellow1;
